@@ -1,0 +1,23 @@
+.catalog-card,.service-card{position:relative;isolation:isolate;overflow:hidden;background:#283126;color:#fff;min-height:395px;border:0;padding:26px;box-shadow:0 5px 18px #17220e0d}
+.service-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2;transition:transform .55s ease}
+.catalog-card:after,.service-card:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#10190e30 0%,#0c150b0d 25%,#10180fd4 56%,#0d1609f5 100%)}
+.catalog-card:hover,.service-card:hover{background:#283126;transform:translateY(-4px)}
+.catalog-card:hover .service-bg,.service-card:hover .service-bg{transform:scale(1.05)}
+.catalog-number,.card-top{color:#fff;font-size:10px;text-shadow:0 1px 7px #0008}
+.catalog-number>span,.card-top>span{display:flex;align-items:center;justify-content:center;width:29px;height:29px;border:1px solid #ffffff75;background:#14201029;border-radius:50%;color:#fff;font-size:17px}
+.catalog-card h3{margin-top:142px;margin-bottom:7px;color:#fff;font-size:29px;line-height:1.1}
+.catalog-card .hindi-label{color:#f3d480;font-size:12px}
+.catalog-card p{color:#e2e7db;font-size:11px;line-height:1.8;margin:14px 0 20px;min-height:42px}
+.catalog-enquire{border-top-color:#ffffff40;color:#fff;padding-top:16px}.catalog-enquire b,.card-link b{color:var(--yellow)}
+.service-card{min-height:385px;display:flex;flex-direction:column;padding:27px}
+.service-card h3{margin-top:auto;padding-top:155px;font-size:31px;color:#fff;line-height:1.1}
+.service-card p{color:#e2e7db;margin:6px 0 0;max-width:100%;min-height:45px}
+.service-card .card-link{color:#fff;border-top-color:#ffffff40;margin-top:21px}
+.service-card:nth-child(2) .service-bg{object-fit:contain;object-position:center 17%;padding:15px 5px 115px;background:radial-gradient(ellipse at 55% 25%,#7d7143,#263220 80%)}
+.real-map{height:410px;background:#e5e9dd;position:relative;border:1px solid #ccd3be}
+.real-map iframe{width:100%;height:100%;border:0;display:block}
+.map-directions{position:absolute;bottom:18px;left:20px;right:20px;background:var(--ink);color:#fff;padding:15px 18px;font-size:11px;box-shadow:0 3px 14px #0002;text-align:center}
+.exact-address{display:block;color:#748165;font-size:10px;line-height:1.8;margin-top:14px}
+@media(max-width:1000px){.catalog-card{padding:22px}.catalog-card h3{font-size:27px;margin-top:135px}.service-card{padding:22px}.service-card h3{font-size:27px}}
+@media(max-width:650px){.catalog-grid{grid-template-columns:1fr;gap:18px}.catalog-card{min-height:375px;padding:25px}.catalog-card h3{margin-top:138px;font-size:31px}.catalog-card p{font-size:12px;min-height:0}.catalog-card .hindi-label{font-size:12px}.catalog-enquire{font-size:11px}.service-card{min-height:365px;padding:25px}.service-card h3{padding-top:150px;font-size:31px}.service-card p{max-width:100%;font-size:12px}.real-map{height:360px}.map-directions{font-size:10px;left:15px;right:15px}}
+@media(prefers-reduced-motion:reduce){.service-bg{transition:none}.catalog-card:hover .service-bg,.service-card:hover .service-bg{transform:none}}

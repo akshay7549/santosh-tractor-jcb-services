@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akshay7549.github.io/santosh-tractor-jcb-services/sitemap.xml
