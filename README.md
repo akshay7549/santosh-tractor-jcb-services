@@ -19,6 +19,7 @@ A responsive business website for tractor, JCB, farming, transport and service e
 - CSS files: responsive layout, service photography, premium design and footer.
 - `app.js`, `catalog.js`, `premium.js`: navigation, service selection, WhatsApp enquiry, filters and visual interactions.
 - `assets/`: images used by the website. See `ASSETS.md` and `SERVICE-IMAGES.md` for provenance.
+- `assets/real/`, `real-photos.css`, `real-photos.js`: owner-supplied photographs, responsive gallery and accessible full-photo viewer with keyboard navigation.
 - `robots.txt`, `sitemap.xml`: search discovery files configured for this GitHub Pages URL.
 - `.nojekyll`: serve this static website directly.
 
