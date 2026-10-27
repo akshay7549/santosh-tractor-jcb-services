@@ -1,0 +1,33 @@
+/* Shared fluid gutters keep the header, hero and sections aligned. */
+:root{--page-gutter:clamp(20px,4vw,80px)}
+.wrap,.topbar .wrap{width:calc(100% - var(--page-gutter)*2);max-width:1680px}
+.real-photo-hero{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.25fr);gap:18px clamp(28px,4vw,80px);padding:60px max(var(--page-gutter),calc((100% - 1680px)/2));min-height:0;align-items:center}
+.real-photo-hero .hero-content{grid-column:1;grid-row:1/5;width:100%;max-width:none;margin:0;padding:0;min-width:0}
+.real-photo-hero .hero-content h1{font-size:clamp(50px,5.1vw,98px);max-width:none;line-height:1.02}
+.real-photo-hero .hero-copy{max-width:520px}
+.real-photo-hero .actions{flex-wrap:wrap;gap:20px}
+.real-photo-hero .hero-photo.mahindra-hero{position:relative;grid-column:2;grid-row:2;inset:auto;width:100%;aspect-ratio:1.62;min-width:0;z-index:2}
+.real-photo-hero .mahindra-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:58% 50%}
+.real-photo-hero .hero-machine-label{position:relative;grid-column:2;grid-row:1;inset:auto;justify-self:end;line-height:1.8;font-size:8px;letter-spacing:1.5px}
+.real-photo-hero .hero-machine-label b{font-size:8px}
+.real-photo-hero .hero-jcb{position:relative;grid-column:2;grid-row:3;inset:auto;justify-self:end;margin:0}
+.real-photo-hero .photo-caption{position:relative;grid-column:2;grid-row:4;inset:auto;max-width:100%;justify-self:end;line-height:1.8;text-align:right}
+.service-grid,.catalog-grid,.about-grid,.booking-grid,.contact-grid,.footer-grid{min-width:0}
+.service-grid>*,.catalog-grid>*,.about-grid>*,.booking-grid>*,.contact-grid>*,.footer-grid>*,.form-row>*{min-width:0}
+@media(min-width:1500px){.real-photo-hero{padding-block:72px}.service-card{min-height:440px}.service-card h3{padding-top:210px}.catalog-card{min-height:420px}.catalog-card h3{margin-top:165px}}
+@media(min-width:761px) and (max-width:1000px){.real-photo-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding-block:45px;column-gap:28px}.real-photo-hero .hero-content h1{font-size:clamp(46px,6vw,60px)}.real-photo-hero .hero-copy br{display:none}.real-photo-hero .hero-machine-label{letter-spacing:.7px;font-size:6px}.real-photo-hero .hero-machine-label b{font-size:6px;margin-left:6px}.real-photo-hero .hero-reassurance{flex-wrap:wrap}.real-photo-hero .hero-photo.mahindra-hero{aspect-ratio:1.15}.service-grid,.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .real-photo-hero{grid-template-columns:minmax(0,1fr);gap:18px;padding:38px var(--page-gutter) 24px;min-height:0}
+ .real-photo-hero .hero-content{grid-column:1;grid-row:1}
+ .real-photo-hero .hero-content h1{font-size:clamp(44px,10vw,65px);margin-top:24px}
+ .real-photo-hero .hero-copy{max-width:100%}
+ .real-photo-hero .hero-machine-label{grid-column:1;grid-row:2;justify-self:start;margin-top:12px;font-size:7px;letter-spacing:.7px}
+ .real-photo-hero .hero-machine-label b{font-size:7px;margin-left:6px}
+ .real-photo-hero .hero-photo.mahindra-hero{grid-column:1;grid-row:3;aspect-ratio:1.5}
+ .real-photo-hero .hero-jcb{grid-column:1;grid-row:4;justify-self:start}
+ .real-photo-hero .photo-caption{grid-column:1;grid-row:5;justify-self:start;text-align:left;font-size:7px}
+ .real-photo-hero .hero-orbit{top:auto;bottom:0}
+ .real-photo-hero .hero-hindi{font-size:16px}
+ .form-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:380px){.form-row{grid-template-columns:minmax(0,1fr)}.real-photo-hero .hero-content h1{font-size:44px}.real-photo-hero .eyebrow{font-size:7px;letter-spacing:1.3px}.brand strong{font-size:22px}.brand small{font-size:6px}.nav{gap:12px}}
